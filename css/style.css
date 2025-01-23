@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-family: 1.2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav ul a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200;
+    margin: 0 auto;
+}
+
+.home {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.home h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.home-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.cta-bn {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #575757;
+}
+
+.portfolio  {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery .image img:hover {
+    transform: scale(1.05)
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services {
+    margin-bottom: 40px;
+}
+
+.service-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.service-iem h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-iem img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.contacts {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.conacts h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+fom buton  {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #575757;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+foter a:hover {
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .home h2 {
+        font-size: 2rem;
+    }
+    .ca.btn {
+        font-size: 1rem;
+    }
+
+    .portfolio .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .service-item h3 {
+        font-size: 1.8rem;
+    }
+
+    .service-item img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .about p,
+    .service-iem p {
+        font-size: 1rem;
+    }
+
+    .home h2 {
+        font-size: 1.8rem;
+    }
+
+    .portfolio h2,
+    .abouth h2,
+    .service h2,
+    .contacts h2, {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.
